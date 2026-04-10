@@ -36,13 +36,16 @@
 }
 
 :root {
-  --safe-area-top: env(safe-area-inset-top, 0px);
-  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
 }
 
 * {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  box-sizing: border-box;
 }
 
 html, body, #root {
@@ -55,4 +58,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
   background-color: #f0f9ff;
   color: #1e293b;
+}
+
+/* Safe area spacer applied via App wrapper */
+.safe-top {
+  padding-top: var(--sat);
+}
+.safe-bottom {
+  padding-bottom: var(--sab);
 }

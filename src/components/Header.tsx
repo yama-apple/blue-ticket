@@ -11,8 +11,7 @@ export function Header({ title, showBack, rightAction }: HeaderProps) {
   const setScreen = useGameStore(s => s.setScreen)
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100"
-      style={{ paddingTop: 'var(--safe-area-top)' }}>
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="max-w-lg mx-auto flex items-center justify-between h-12 px-4">
         <div className="w-16 flex justify-start">
           {showBack && (

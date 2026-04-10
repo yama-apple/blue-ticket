@@ -19,8 +19,7 @@ export function BottomNav() {
   const activeTab = tabs.find(t => t.screen === screen)?.id || 'home'
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50"
-      style={{ paddingBottom: 'var(--safe-area-bottom)' }}>
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 safe-bottom">
       <div className="max-w-lg mx-auto flex justify-around items-center h-14">
         {tabs.map(tab => (
           <button

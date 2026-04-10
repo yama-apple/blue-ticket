@@ -36,8 +36,7 @@ export function ResultScreen() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-primary-50 to-white px-4"
-      style={{ paddingTop: 'calc(var(--safe-area-top) + 24px)' }}>
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-primary-50 to-white px-4 pt-6">
 
       <div className="flex-1 flex flex-col items-center justify-center">
         <span className="text-7xl mb-4">{resultEmoji}</span>
@@ -97,7 +96,7 @@ export function ResultScreen() {
       </div>
 
       {/* Actions */}
-      <div className="pb-8 space-y-3 mt-6" style={{ paddingBottom: 'calc(var(--safe-area-bottom) + 32px)' }}>
+      <div className="pb-8 space-y-3 mt-6">
         <button
           onClick={endSession}
           className="w-full py-3.5 bg-primary-600 text-white rounded-2xl font-bold text-base active:bg-primary-700"

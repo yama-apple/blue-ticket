@@ -71,7 +71,7 @@ export default function App() {
   }
 
   return (
-    <div className="max-w-lg mx-auto min-h-screen bg-gray-50 relative">
+    <div className="max-w-lg mx-auto min-h-screen bg-gray-50 relative safe-top">
       <AppContent />
       <BottomNav />
     </div>

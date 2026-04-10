@@ -31,7 +31,7 @@ export function ScenarioScreen() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       {/* Top Bar */}
-      <div className="bg-white px-4 py-3 border-b border-gray-100" style={{ paddingTop: 'calc(var(--safe-area-top) + 8px)' }}>
+      <div className="bg-white px-4 py-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-2">
           <button onClick={endSession} className="text-sm text-gray-400 active:text-gray-600">
             ✕ やめる
@@ -137,7 +137,7 @@ export function ScenarioScreen() {
       </div>
 
       {/* Bottom Action */}
-      <div className="bg-white border-t border-gray-100 p-4" style={{ paddingBottom: 'calc(var(--safe-area-bottom) + 16px)' }}>
+      <div className="bg-white border-t border-gray-100 p-4">
         {!showResult ? (
           <button
             onClick={confirmAnswer}
