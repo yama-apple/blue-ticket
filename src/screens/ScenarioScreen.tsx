@@ -29,9 +29,9 @@ export function ScenarioScreen() {
   const difficultyStars = '★'.repeat(scenario.difficulty) + '☆'.repeat(4 - scenario.difficulty)
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="scenario-screen flex flex-col bg-gray-50">
       {/* Top Bar */}
-      <div className="bg-white px-4 py-3 border-b border-gray-100">
+      <div className="bg-white px-4 py-3 border-b border-gray-100 flex-shrink-0">
         <div className="flex items-center justify-between mb-2">
           <button onClick={endSession} className="text-sm text-gray-400 active:text-gray-600">
             ✕ やめる
@@ -54,8 +54,8 @@ export function ScenarioScreen() {
         )}
       </div>
 
-      {/* Question */}
-      <div className="flex-1 overflow-y-auto px-4 py-4">
+      {/* Question - scrollable middle area */}
+      <div className="flex-1 min-h-0 overflow-y-auto px-4 py-4">
         <div className="flex items-center gap-2 mb-2">
           <SeverityBadge severity={scenario.risk_level} />
           <span className="text-xs text-gray-500">{scenario.scene_type}</span>
@@ -136,8 +136,8 @@ export function ScenarioScreen() {
         )}
       </div>
 
-      {/* Bottom Action */}
-      <div className="bg-white border-t border-gray-100 p-4 pb-6 safe-bottom">
+      {/* Bottom Action - always visible, pinned to bottom */}
+      <div className="bg-white border-t border-gray-100 p-4 flex-shrink-0 safe-bottom">
         {!showResult ? (
           <button
             onClick={confirmAnswer}

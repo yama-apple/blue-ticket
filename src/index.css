@@ -67,3 +67,11 @@ body {
 .safe-bottom {
   padding-bottom: var(--sab);
 }
+
+/* Scenario screen: fill exactly the visible viewport minus safe areas */
+.scenario-screen {
+  height: 100dvh;
+  height: 100vh; /* fallback for older browsers */
+  height: 100dvh;
+  padding-top: var(--sat);
+}

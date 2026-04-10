@@ -70,8 +70,11 @@ export default function App() {
     )
   }
 
+  // ScenarioScreen handles its own safe area & full-screen layout
+  const isFullScreen = screen === 'scenario'
+
   return (
-    <div className="max-w-lg mx-auto min-h-screen bg-gray-50 relative safe-top">
+    <div className={`max-w-lg mx-auto min-h-screen bg-gray-50 relative ${isFullScreen ? '' : 'safe-top'}`}>
       <AppContent />
       <BottomNav />
     </div>
