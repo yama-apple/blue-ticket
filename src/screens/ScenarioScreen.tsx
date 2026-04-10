@@ -137,7 +137,7 @@ export function ScenarioScreen() {
       </div>
 
       {/* Bottom Action */}
-      <div className="bg-white border-t border-gray-100 p-4">
+      <div className="bg-white border-t border-gray-100 p-4 pb-6 safe-bottom">
         {!showResult ? (
           <button
             onClick={confirmAnswer}
