@@ -1,0 +1,4177 @@
+[
+  {
+    "id": "s001",
+    "title": "制度の対象年齢",
+    "scene_type": "road",
+    "description": "自転車の青切符制度について友人と話しています。「青切符って何歳から対象なの？」と聞かれました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "14歳以上",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "16歳以上",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "18歳以上",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "年齢制限なし",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "青切符制度の対象は16歳以上です。15歳以下は少年法の枠組みで対応されます。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s002",
+    "title": "反則金の性質",
+    "scene_type": "road",
+    "description": "青切符を受け取った場合、反則金を納付するとどうなりますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "前科がつく",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "免許が取り消される",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "前科はつかず手続き終了",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "裁判所に出廷する必要がある",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "反則金を納付すれば前科はつかず、手続きは終了します。納付しない場合は刑事手続きに移行する可能性があります。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s003",
+    "title": "青切符と赤切符の違い",
+    "scene_type": "road",
+    "description": "自転車の交通違反で「赤切符」が交付されるのはどのような場合ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "軽微な違反すべて",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "2回目以降の違反",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "酒酔い運転など特に悪質な違反",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "未成年者の違反",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "赤切符は酒酔い運転や妨害運転など特に悪質・危険な違反に交付されます。刑事手続きの対象となり、前科がつく可能性があります。",
+    "linked_violation_ids": [
+      "v019",
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s004",
+    "title": "赤信号での判断",
+    "scene_type": "intersection",
+    "description": "朝の通勤時間帯、交差点で信号が赤です。車も歩行者も見当たりません。急いでいるので赤信号のまま渡ろうかと思いました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車がいないので渡っても問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩行者がいなければ問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "自転車は歩行者と同じなので渡れる",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "赤信号では必ず停止。車がいなくても違反",
+        "is_correct": true
+      }
+    ],
+    "correct_choice_id": "c4",
+    "explanation": "自転車は車両であり、赤信号では必ず停止しなければなりません。周囲に車や歩行者がいなくても信号無視は違反です。反則金6,000円。",
+    "linked_violation_ids": [
+      "v001"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s005",
+    "title": "歩行者用信号に従う場合",
+    "scene_type": "intersection",
+    "description": "交差点に車両用信号と歩行者用信号があります。歩行者用信号に「歩行者・自転車専用」の表示があります。自転車はどちらの信号に従いますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車両用信号",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩行者・自転車専用と表示された信号",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "どちらでもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩行者用信号は自転車には関係ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "「歩行者・自転車専用」と表示された歩行者用信号がある場合、自転車はその信号に従います。表示がない場合は車両用信号に従います。",
+    "linked_violation_ids": [
+      "v001"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s006",
+    "title": "黄色信号での判断",
+    "scene_type": "intersection",
+    "description": "交差点に差し掛かったところで信号が黄色に変わりました。停止線まであと数メートルです。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "黄色なので急いで渡る",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "安全に停止できるので停止する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "黄色信号は注意して進めの意味",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車は黄色信号を無視できる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "黄色信号は原則停止です。安全に停止できる場合は停止線で止まります。「注意して進め」ではなく「止まれ」が正しい意味です。",
+    "linked_violation_ids": [
+      "v001"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s007",
+    "title": "一時停止標識がある交差点",
+    "scene_type": "intersection",
+    "description": "住宅街の見通しの悪い交差点に差し掛かりました。一時停止の標識があります。左右を見ると車は来ていないようです。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車が来ていないので徐行で通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "速度を落として左右を確認しながら通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "停止線で完全に止まり、安全を確認してから発進する",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "見通しが悪いので素早く通過した方が安全",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "一時停止標識がある場所では完全に停止する義務があります。「徐行」や「減速」では不十分で、足をついて完全に止まる必要があります。",
+    "linked_violation_ids": [
+      "v002"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s008",
+    "title": "停止線がない一時停止",
+    "scene_type": "residential",
+    "description": "一時停止の標識はあるのですが、停止線が消えてしまっている交差点です。どこで止まるべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "標識の位置で止まる",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "交差点の直前で止まる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "停止線がないので止まらなくてもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "交差点の中央で止まる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "停止線が消えている場合は交差点の直前で停止します。停止線がないからといって止まらなくてもよいわけではありません。",
+    "linked_violation_ids": [
+      "v002"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s009",
+    "title": "一時停止後の発進",
+    "scene_type": "intersection",
+    "description": "一時停止標識で止まりました。左側から車が来ています。自分は直進したいのですが。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車が先に止まったので優先",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "左方優先なので車が先に通過するのを待つ",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車の方が小さいので先に行く",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "同時に発進する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "同格の交差点では「左方優先」の原則があります。左側から来る車両が優先です。一時停止で先に止まったとしても、左方優先は変わりません。",
+    "linked_violation_ids": [
+      "v002",
+      "v007"
+    ],
+    "difficulty": 3,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s010",
+    "title": "右側通行の危険性",
+    "scene_type": "road",
+    "description": "目的地が道路の右側にあります。右側を少しだけ逆走して向かおうと思いました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "短い距離なら右側通行も許される",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "目的地が近いなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "距離に関わらず右側通行は違反。左側を通行して横断する",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "歩道に上がれば右側でも大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "右側通行（逆走）は距離に関係なく違反です。対向車との正面衝突の危険性が極めて高い。左側を通行し、横断歩道等を利用して渡りましょう。反則金6,000円。",
+    "linked_violation_ids": [
+      "v003"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s011",
+    "title": "一方通行の逆走",
+    "scene_type": "road",
+    "description": "一方通行の道路で「自転車を除く」の補助標識がついています。自転車は逆方向に通行できますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "一方通行は自転車にも適用されるので不可",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "「自転車を除く」があるので逆方向に通行可能",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道のみ逆方向に通行可能",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "夜間のみ逆方向に通行可能",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "「自転車を除く」の補助標識がある一方通行道路では、自転車は逆方向にも通行可能です。ただし道路の左側端を注意して通行する必要があります。",
+    "linked_violation_ids": [
+      "v003",
+      "v008"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s012",
+    "title": "夜間のライト点灯",
+    "scene_type": "night",
+    "description": "夕方6時、まだ薄明るいですが日没時刻は過ぎています。ライトをつけるべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "まだ見えるのでつけなくてもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "日没後なので点灯義務がある",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "完全に暗くなってからでよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "街灯があればつけなくてよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "ライトの点灯義務は「日没から日出まで」です。まだ明るく見えても日没時刻を過ぎていれば点灯が必要です。自分の視界のためだけでなく、他者から見えるようにするためです。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s013",
+    "title": "点滅ライトの可否",
+    "scene_type": "night",
+    "description": "夜間走行中、前照灯を点滅モードにして走っています。これは問題ありますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "点滅でも光っているので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "都道府県により点滅のみでは不十分とされる場合がある",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "点滅の方が目立つので推奨",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "後ろのライトだけ点滅なら問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "前照灯は「10m先の障害物を確認できる光度」が求められます。点滅モードのみでは常時照射とならず、この基準を満たさないとされる場合があります。点滅は補助として使い、常時点灯の前照灯を併用するのが安全です。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s014",
+    "title": "反射器材の必要性",
+    "scene_type": "night",
+    "description": "夜間、前照灯は点けていますが、後ろの尾灯も反射板もありません。これは問題ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "前照灯があれば十分",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "後方は見えなくても問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "尾灯または反射器材が必要",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "反射シールが服についていれば大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "夜間走行時は前照灯に加えて、尾灯または後方の反射器材（赤色の反射板等）の装着が義務です。後方からの車両に自分の存在を知らせるために必須。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s015",
+    "title": "ながらスマホ",
+    "scene_type": "road",
+    "description": "自転車で走行中、スマートフォンの地図アプリを確認するため、手に持って画面を見ながら走っています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "地図確認なので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "手に持って画面を注視するのは違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "片手が空いていれば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "速度を落としていれば大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "走行中にスマートフォンを手に持って画面を注視することは禁止です。地図確認でも同様。反則金は最高額クラスの12,000円。安全な場所に停車してから確認しましょう。",
+    "linked_violation_ids": [
+      "v005"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s016",
+    "title": "スマホホルダー使用時",
+    "scene_type": "road",
+    "description": "自転車にスマホホルダーを取り付けてナビ表示しています。走行中にルートを確認するため画面を注視しました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ホルダーに固定しているので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "手に持っていないので合法",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "ホルダー固定でも画面を注視すれば違反の可能性",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "ナビ用途なら注視しても許される",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "ホルダーに固定していても走行中の画面注視は安全運転義務に反する可能性があります。チラッと見る程度にとどめ、詳しく確認したいときは停車しましょう。",
+    "linked_violation_ids": [
+      "v005",
+      "v009"
+    ],
+    "difficulty": 3,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s017",
+    "title": "歩道通行の原則",
+    "scene_type": "sidewalk",
+    "description": "車道に車が多く怖いので、歩道を自転車で走ろうと思います。歩道には「自転車通行可」の標識はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車が多ければ歩道を走ってよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "標識がなくても歩道は走れる",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "車道が危険な場合はやむを得ず歩道通行可だが、歩行者優先で徐行",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "歩道は自転車走行禁止",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "標識がなくても、車道の通行が危険な場合はやむを得ず歩道通行が認められます。ただし歩行者優先で車道寄りを徐行しなければなりません。",
+    "linked_violation_ids": [
+      "v006",
+      "v020"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s018",
+    "title": "歩道でベルを鳴らす",
+    "scene_type": "sidewalk",
+    "description": "自転車通行可の歩道を走行中、前方にゆっくり歩く歩行者がいます。急いでいるのでベルを鳴らして道を空けてもらおうと思いました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ベルで知らせるのは親切な行為",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩行者をどかすためにベルを鳴らすのは違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道では自転車が優先なのでベルを鳴らしてよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "2回までならベルを鳴らしてもよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "ベルは危険防止のためやむを得ない場合にのみ使用できます。歩行者をどかすために鳴らすのは違反です。歩道では歩行者が優先。歩行者が妨げになる場合は自転車が一時停止すべきです。",
+    "linked_violation_ids": [
+      "v006"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s019",
+    "title": "歩道での走行位置",
+    "scene_type": "sidewalk",
+    "description": "自転車通行可の歩道を走行しています。歩道のどの位置を走るべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "歩道の中央",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "建物側",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "車道寄り",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "どこでもよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "歩道を通行する場合は車道寄りの部分を徐行しなければなりません。建物側は歩行者の通行空間として確保する必要があります。",
+    "linked_violation_ids": [
+      "v006"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s020",
+    "title": "交差点での安全確認",
+    "scene_type": "intersection",
+    "description": "信号のない交差点を直進しようとしています。左右から車が来る可能性があります。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "速度を維持して素早く通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "減速して左右を確認しながら通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "直進なので確認不要",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "クラクションを鳴らして通過する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "信号のない交差点では必ず減速し、左右の安全を確認してから通過します。交差点での安全進行義務は道路交通法第36条で規定されています。",
+    "linked_violation_ids": [
+      "v007"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s021",
+    "title": "優先道路との交差点",
+    "scene_type": "intersection",
+    "description": "自分が走っている道路と交差する道路に「優先道路」の標識があります。交差点に進入する際、どうすべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "先に来た方が優先",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車は小さいので先に行ける",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "優先道路の車両を優先し、安全を確認してから進入する",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "自分の速度が速ければ先に行ける",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "優先道路を通行する車両が優先です。優先道路に入る場合は徐行し、優先道路の車両の進行を妨げてはなりません。",
+    "linked_violation_ids": [
+      "v007"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s022",
+    "title": "車道の走行位置",
+    "scene_type": "road",
+    "description": "片側2車線の道路を自転車で走っています。どの位置を走行すべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "第1車線（左端の車線）の左側端",
+        "is_correct": true
+      },
+      {
+        "id": "c2",
+        "text": "第1車線の中央",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "第2車線でもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "路肩のみ",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c1",
+    "explanation": "自転車は車道の左側端を通行します。複数車線がある場合は最も左側の車線（第1車線）の左側端を走行します。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s023",
+    "title": "自転車専用通行帯",
+    "scene_type": "road",
+    "description": "道路に青い矢印で示された「自転車専用通行帯」があります。自動車が駐車していて通れません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "歩道に上がる",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "安全を確認して自転車専用通行帯の右側（車道側）を通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "駐車車両のすぐ横を速く通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "引き返す",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車専用通行帯が塞がれている場合は、安全を確認してから車道側に出て通過します。駐車車両のドアが突然開くこともあるので、十分な間隔を取りましょう。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s024",
+    "title": "蛇行運転",
+    "scene_type": "road",
+    "description": "友人と競争しながら自転車で蛇行運転をしています。これは問題ありますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "楽しいだけなので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "後ろに車がいなければ大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "安全運転義務違反に該当する",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "歩道でなければ問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "蛇行運転は進路が不安定になり、後続車両との接触事故の危険が高い。安全運転義務違反として反則金9,000円が科される可能性があります。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s025",
+    "title": "二人乗り",
+    "scene_type": "road",
+    "description": "友人を自転車の後ろに乗せて走行しようとしています。これは問題ありますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "短距離なら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "大人同士の二人乗りは禁止",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ゆっくり走れば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "二人乗り専用自転車ならどんな道でもOK",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "16歳以上の運転者が6歳未満の幼児1人を幼児用座席に乗せる場合等を除き、二人乗りは禁止です。タンデム自転車は都道府県によって走行可能な道路が異なります。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s026",
+    "title": "傘差し運転",
+    "scene_type": "road",
+    "description": "突然雨が降ってきました。傘を差しながら自転車を運転しようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "小雨なら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "傘差し運転は違反。レインコートを使うべき",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "透明な傘なら視界が確保できるので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "速度を落とせば問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "傘差し運転は片手運転となり安全運転義務違反です。傘の種類に関わらず禁止。レインコートやポンチョの使用が推奨されます。反則金5,000円。",
+    "linked_violation_ids": [
+      "v010"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s027",
+    "title": "傘を固定するスタンド",
+    "scene_type": "road",
+    "description": "自転車に傘を固定するスタンドを取り付けています。これなら両手でハンドルを握れるので大丈夫ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "両手が空くので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "都道府県によっては違反となる場合がある",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "メーカー品なら合法",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "完全に合法",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "傘の固定スタンドについては都道府県によって規制が異なります。風で傘が煽られてバランスを崩す危険や、傘が他の車両・歩行者に接触する危険があるため推奨されません。",
+    "linked_violation_ids": [
+      "v010"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s028",
+    "title": "並進走行",
+    "scene_type": "road",
+    "description": "友人と2台の自転車で並んで走っています。「並進可」の標識はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車同士なら並走しても問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "車が来たら1列になればよい",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "「並進可」の標識がなければ並進は違反",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "歩道なら並進してもよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "「並進可」の標識がない限り、自転車の並進は禁止です。車道の幅を占有し、自動車の通行を妨げる危険な行為。反則金5,000円。",
+    "linked_violation_ids": [
+      "v011"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s029",
+    "title": "踏切での一時停止",
+    "scene_type": "railroad",
+    "description": "踏切に差し掛かりました。遮断機は上がっていて警報機も鳴っていません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "遮断機が上がっているので停止不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "徐行して通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "一時停止して安全を確認してから通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "電車の音が聞こえなければ停止不要",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "踏切では遮断機の状態に関わらず一時停止が義務です。停止して左右の安全を確認し、列車が来ないことを確かめてから通過します。反則金7,000円。",
+    "linked_violation_ids": [
+      "v012"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s030",
+    "title": "遮断機が下り始めた踏切",
+    "scene_type": "railroad",
+    "description": "踏切の遮断機が下り始めました。まだ完全には下りていません。急いでいるので通過しようかと思います。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "まだ下り切っていないので通過可能",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "絶対に進入してはならない",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車なら速いので間に合う",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "他に通過する人がいれば一緒に行ける",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "遮断機が下り始めた、または警報機が鳴り始めた踏切には絶対に進入してはなりません。列車は急には止まれません。数秒の判断が命に関わります。",
+    "linked_violation_ids": [
+      "v012"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s031",
+    "title": "ブレーキのない自転車",
+    "scene_type": "road",
+    "description": "競技用のピストバイク（固定ギア車）をそのまま公道で乗っています。ブレーキは付いていません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "固定ギアなのでペダルで止まれるから問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "公道ではブレーキなし自転車の運転は違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "競技用自転車は特別扱いされる",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "足で地面をこすって止まれるなら大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "公道を走る自転車には前後輪それぞれにブレーキの装着が義務付けられています。固定ギアのペダル制動は法律上のブレーキとして認められません。反則金6,000円。",
+    "linked_violation_ids": [
+      "v013"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s032",
+    "title": "ブレーキの効きが悪い自転車",
+    "scene_type": "road",
+    "description": "自転車のブレーキワイヤーが伸びて、ブレーキレバーを強く握っても効きが悪い状態です。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "止まれるなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "整備不良で違反の可能性あり。整備してから乗るべき",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "片方のブレーキが効けば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ゆっくり走れば大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "ブレーキは時速10kmで3m以内に停止できる性能が求められます。効きが悪いブレーキは整備不良にあたり、緊急時に重大事故につながります。必ず整備してから乗りましょう。",
+    "linked_violation_ids": [
+      "v013"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s033",
+    "title": "右折時の手信号",
+    "scene_type": "intersection",
+    "description": "交差点で右折しようとしています。手信号を出す必要がありますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は手信号不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "右手を水平に伸ばして合図を出す",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "左手を上に曲げるだけでよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "声で「右に行きます」と言えばよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "右折時は右手を水平に伸ばすか、左手を肘から上に曲げて合図します。法律上は義務ですが、安全にできない場合は無理をしないことも大切です。",
+    "linked_violation_ids": [
+      "v014"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s034",
+    "title": "進路変更の合図",
+    "scene_type": "road",
+    "description": "走行中に駐車車両を避けるため右に進路変更する必要があります。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "そのまま右に移動する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "後方を確認し、手信号を出してから進路変更する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ベルを鳴らして移動する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "急に右に移動した方が安全",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "進路変更時は必ず後方確認と合図が必要です。手信号で進路変更の意思を後続車に伝え、安全を確認してから移動します。",
+    "linked_violation_ids": [
+      "v014"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s035",
+    "title": "道路上への駐輪",
+    "scene_type": "commercial",
+    "description": "お店の前の歩道に自転車を停めようとしています。駐輪場は少し離れた場所にあります。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "お店の前なら短時間の駐輪はOK",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩道上の放置駐車は違反。駐輪場を利用する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "他の自転車が停まっていれば自分も停めてよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "鍵をかければ放置にはならない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "歩道上の自転車放置は各自治体の条例で禁止されており、撤去されることもあります。指定の駐輪場を利用しましょう。",
+    "linked_violation_ids": [
+      "v015"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s036",
+    "title": "大きな荷物の積載",
+    "scene_type": "road",
+    "description": "大きなダンボール箱を抱えながら自転車を運転しようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "片手で持てれば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "積載制限違反であり片手運転で安全運転義務にも違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ゆっくり走れば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "荷台に載せれば大きさは関係ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "大きな荷物を抱えての運転は片手運転かつ視界不良となり、安全運転義務違反です。荷台の積載制限も超える可能性が高い。宅配便等を利用しましょう。",
+    "linked_violation_ids": [
+      "v016",
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s037",
+    "title": "路側帯の種類",
+    "scene_type": "road",
+    "description": "歩道がない道路を走行中、白い二重実線で区切られた路側帯があります。この路側帯を自転車で走行できますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は路側帯を自由に走行できる",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "二重実線の路側帯（歩行者用路側帯）は自転車通行不可",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩行者がいなければ通行可能",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "左側の路側帯のみ通行可能",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "二重実線の路側帯は「歩行者用路側帯」であり、自転車は通行できません。自転車が通行できるのは「駐停車禁止路側帯」（実線＋破線）と通常の路側帯です。",
+    "linked_violation_ids": [
+      "v017"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s038",
+    "title": "路側帯の通行方向",
+    "scene_type": "road",
+    "description": "歩道がない道路の路側帯を走行しています。路側帯はどちら側を通行すべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "どちら側でもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "道路の左側の路側帯を通行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩行者と同じ右側",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "車に近い側",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "路側帯を通行する場合も左側通行の原則に従い、道路の左側の路側帯を通行します。右側の路側帯を通行すると実質的に右側通行（逆走）となり危険です。",
+    "linked_violation_ids": [
+      "v017",
+      "v003"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s039",
+    "title": "イヤホンでの走行",
+    "scene_type": "road",
+    "description": "両耳にイヤホンをつけて音楽を大音量で聴きながら自転車を走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自分の楽しみなので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "周囲の音が聞こえない状態での走行は違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "骨伝導イヤホンなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "音量を半分にすれば問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "両耳イヤホンで周囲の音が聞こえない状態での走行は安全運転義務違反になる可能性が高いです。クラクションや緊急車両のサイレンが聞こえないと重大事故につながります。",
+    "linked_violation_ids": [
+      "v018"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s040",
+    "title": "片耳イヤホンの可否",
+    "scene_type": "road",
+    "description": "片耳だけイヤホンをつけて通話しながら自転車を走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "片耳なら完全に合法",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "都道府県により判断が異なるが、通話しながらの走行は危険",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ハンズフリーなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "片耳でも違法",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "片耳イヤホンの可否は都道府県によって異なりますが、通話に気を取られ注意力が低下するため推奨されません。安全に走行することが最優先です。",
+    "linked_violation_ids": [
+      "v018",
+      "v009"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s041",
+    "title": "飲酒後の自転車",
+    "scene_type": "night",
+    "description": "居酒屋でビールを2杯飲みました。家まで自転車で15分の距離です。自転車で帰ろうとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ビール2杯なら大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車なので免許は関係ない、大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "飲酒後の自転車運転は違反。タクシーか徒歩で帰る",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "ゆっくり走れば問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "飲酒して自転車を運転することは法律で禁止されています。量に関わらず、アルコールを摂取したら自転車に乗ってはいけません。酒酔い運転は赤切符対象で刑事罰（5年以下の懲役または100万円以下の罰金）の可能性があります。",
+    "linked_violation_ids": [
+      "v019"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s042",
+    "title": "飲酒運転の幇助",
+    "scene_type": "night",
+    "description": "友人が飲酒後に「自転車だから大丈夫」と言って自転車に乗ろうとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は問題ないと教える",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自分は関係ないので放っておく",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "自転車も飲酒運転になることを伝え、止める",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "ゆっくり走るよう助言する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "自転車の飲酒運転を制止することは大切です。また、飲酒者に自転車を提供したり、同乗したりすると幇助として処罰される可能性もあります。",
+    "linked_violation_ids": [
+      "v019"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s043",
+    "title": "13歳未満の歩道通行",
+    "scene_type": "sidewalk",
+    "description": "12歳の子どもが自転車で歩道を走っています。「自転車通行可」の標識はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "標識がないので違反",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "13歳未満は歩道通行が認められる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "保護者と一緒でなければ違反",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "子どもでも車道を走るべき",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "13歳未満の子どもは標識がなくても歩道を通行できます。ただし歩行者優先で徐行する義務は変わりません。",
+    "linked_violation_ids": [
+      "v020"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s044",
+    "title": "70歳以上の歩道通行",
+    "scene_type": "sidewalk",
+    "description": "72歳の方が自転車で歩道を走っています。「自転車通行可」の標識はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "標識がないので違反",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "70歳以上は歩道通行が認められる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "75歳以上からのみ認められる",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "年齢に関わらず車道のみ",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "70歳以上の方は標識がなくても歩道を通行できます。高齢者の安全確保のための例外規定です。",
+    "linked_violation_ids": [
+      "v020"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s045",
+    "title": "やむを得ない場合の歩道通行",
+    "scene_type": "road",
+    "description": "車道に大型トラックが多く、工事で道幅が狭くなっています。車道走行が危険に感じます。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "危険でも車道を走るべき",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "車道が危険な場合はやむを得ず歩道通行可（徐行・歩行者優先）",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道は絶対に走れない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "トラックが通過するまで待つ",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "車道の状況が危険な場合はやむを得ず歩道を通行できます。ただし歩行者優先で車道寄りを徐行する義務があります。",
+    "linked_violation_ids": [
+      "v020",
+      "v006"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s046",
+    "title": "二段階右折の方法",
+    "scene_type": "intersection",
+    "description": "交差点で右折したいのですが、自転車はどのように右折すべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車と同じように交差点の中央を右折する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "まず左端を直進し、向きを変えて直進する（二段階右折）",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩行者用横断歩道を押して渡る",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "右折レーンに入って右折する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車は二段階右折が原則です。まず交差点の左側端を直進し、方向を変えてから改めて直進します。",
+    "linked_violation_ids": [
+      "v021"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s047",
+    "title": "小回り右折の危険性",
+    "scene_type": "intersection",
+    "description": "車の流れに乗って交差点の中央付近で右折しようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車と同じ流れなので安全",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車の小回り右折は違反かつ危険",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ウインカーの代わりに手信号を出せばOK",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "交通量が少ない時は許される",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車が交差点中央で右折する「小回り右折」は禁止です。対向車の流れに入るため非常に危険。必ず二段階右折をしましょう。",
+    "linked_violation_ids": [
+      "v021"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s048",
+    "title": "反則金の金額範囲",
+    "scene_type": "road",
+    "description": "自転車の青切符の反則金はいくらぐらいですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "1,000円〜5,000円",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "5,000円〜12,000円",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "10,000円〜50,000円",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "一律10,000円",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車の反則金は5,000円〜12,000円の範囲です。違反の種類によって金額が異なります。最も高額なのは「ながらスマホ」の12,000円です。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s049",
+    "title": "反則金を納付しない場合",
+    "scene_type": "road",
+    "description": "青切符を受け取りましたが、反則金を納付期限までに払いませんでした。どうなりますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "何も起こらない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自動的に免除される",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "通告書が届き、さらに放置すると刑事手続きに移行する可能性",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "反則金が2倍になる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "反則金を仮納付しないと通告書が届きます。通告後も納付しないと刑事手続きに移行し、裁判で罰金刑等が科される可能性があります。前科がつく可能性も。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s050",
+    "title": "指導警告と青切符の違い",
+    "scene_type": "road",
+    "description": "自転車で軽微な違反をした場合、必ず青切符が交付されますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "はい、すべての違反で青切符が交付される",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "いいえ、まず指導・警告が行われ、悪質な場合に青切符が交付される",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "2回目の違反から交付される",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "反則金額が高い違反のみ交付される",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "取り締まりの基本方針は「指導・警告が基本」です。口頭指導や警告票の交付で対応し、それに従わない場合や悪質・危険な場合に青切符が交付されます。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s051",
+    "title": "通学路でのスピード",
+    "scene_type": "school_zone",
+    "description": "朝の通学時間帯、小学校の前を自転車で走っています。子どもたちが歩いています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車道を走っていれば速度は関係ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "速度を十分に落とし、子どもの飛び出しに注意して走行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ベルを鳴らして注意喚起すればよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩道に上がって走れば安全",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "通学路では子どもの飛び出しが予想されます。速度を十分に落とし、いつでも停止できる態勢で走行する安全運転義務があります。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s052",
+    "title": "左折する車の内輪差",
+    "scene_type": "intersection",
+    "description": "交差点で信号待ちをしています。隣に大型トラックがいて左折しようとしています。青信号になりました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "一緒にスタートして先に行く",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "トラックの左折を待ってから発進する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "トラックの左側をすり抜ける",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "トラックより先にスタートすれば安全",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "大型車の左折時は内輪差が大きく、左側にいる自転車が巻き込まれる危険が極めて高い。大型車が左折する場合は必ず待ちましょう。",
+    "linked_violation_ids": [
+      "v007",
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s053",
+    "title": "見通しの悪いカーブ",
+    "scene_type": "residential",
+    "description": "住宅街の見通しの悪いカーブを自転車で走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "カーブの外側を速く走る",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "速度を落とし、道路の左側端を走行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ベルを鳴らしながら走行する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "中央線寄りを走った方が見通しが良い",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "見通しの悪いカーブでは対向車や歩行者との衝突を避けるため、速度を落とし道路の左側端を走行します。",
+    "linked_violation_ids": [
+      "v009",
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s054",
+    "title": "横断歩道での歩行者",
+    "scene_type": "intersection",
+    "description": "自転車で車道を走行中、横断歩道で歩行者が渡ろうとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は車道なので歩行者は関係ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "横断歩道の手前で停止し、歩行者を優先させる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩行者の後ろを通過すればよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ベルで注意喚起して通過する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "横断歩道を渡ろうとしている歩行者がいる場合、自転車も停止して歩行者を優先しなければなりません。歩行者の横断を妨げることは禁止です。",
+    "linked_violation_ids": [
+      "v007",
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s055",
+    "title": "坂道での速度",
+    "scene_type": "road",
+    "description": "急な下り坂を自転車で走っています。スピードがどんどん出てきました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "気持ちいいのでそのまま走る",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "ブレーキを適宜使い、制御可能な速度を維持する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "足を地面につけて減速する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ペダルを逆回転させて減速する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "下り坂ではスピードが出すぎると制動距離が伸び、カーブや交差点で曲がりきれない・止まりきれない危険があります。こまめにブレーキを使いましょう。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s056",
+    "title": "交差点での左折",
+    "scene_type": "intersection",
+    "description": "交差点を左折しようとしています。後方から車が来ている様子です。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "そのまま左折する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "手信号を出し、後方確認してから左折する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "速く左折すれば車に迷惑をかけない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "車が通過してから左折する必要はない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "左折時は手信号で合図を出し、後方の安全を確認してから曲がります。突然の左折は後続車との接触事故の原因になります。",
+    "linked_violation_ids": [
+      "v014",
+      "v007"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s057",
+    "title": "電動アシスト自転車の速度",
+    "scene_type": "road",
+    "description": "電動アシスト自転車で走行中です。時速24kmを超えるとアシストが切れますが、下り坂で時速30km以上出ています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "電動アシストなので安全装置が働くから大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "速度超過は安全運転義務違反の可能性。ブレーキで制御すべき",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "アシストが切れていれば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車に速度制限はない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車には法定速度はありませんが、安全運転義務として周囲に危害を及ぼさない速度で走る義務があります。時速30km以上は制御が難しく危険です。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 3,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s058",
+    "title": "狭い道での対向車",
+    "scene_type": "residential",
+    "description": "狭い住宅街の道で、前方から車が来ました。すれ違うのが難しい幅です。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車が避けるべきなので直進する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "左側端に寄り、必要なら一時停止して車を先に通す",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道に上がって走行する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "速く走って先に通過する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "狭い道では互いに譲り合いが大切です。自転車は左側端に寄り、安全にすれ違えない場合は一時的に停止して車を先に通しましょう。",
+    "linked_violation_ids": [
+      "v009",
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s059",
+    "title": "雨天のブレーキ距離",
+    "scene_type": "road",
+    "description": "雨の日に自転車で走行しています。前方の信号が赤に変わりました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "いつもと同じタイミングでブレーキ",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "雨天はブレーキの効きが悪いので早めにブレーキをかける",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "雨の日は信号を無視してもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "足で地面を擦って止まる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "雨天時はリムやタイヤが濡れてブレーキの効きが大幅に低下します。制動距離が通常の2〜3倍になることもあるため、早めのブレーキと速度控えめが重要。",
+    "linked_violation_ids": [
+      "v009",
+      "v013"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s060",
+    "title": "交差点での死角",
+    "scene_type": "intersection",
+    "description": "T字路の交差点を右から左へ直進しようとしています。左側に塀があり、右から来る車が見えません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "速く通過すれば大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "一度停止または徐行して、安全確認をしてから通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ミラーがあれば確認不要",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ベルを鳴らして存在を知らせる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "見通しの悪い交差点では必ず徐行または一時停止して安全確認をします。塀や建物で死角がある場所は特に危険です。",
+    "linked_violation_ids": [
+      "v007",
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s061",
+    "title": "バス停付近の注意",
+    "scene_type": "road",
+    "description": "バス停に停車中のバスの横を自転車で通過しようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "バスの左側を素早く通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "バスの前から歩行者が飛び出す可能性を考え、徐行して通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "バスが発車するまで待つ必要はない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ベルを鳴らして通過する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "停車中のバスの陰から歩行者が飛び出す可能性があります。バスの横を通過する際は十分に徐行し、前方に注意しましょう。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s062",
+    "title": "ながら運転全般",
+    "scene_type": "road",
+    "description": "自転車に乗りながら飲み物を片手で飲んでいます。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "のどが渇いたのだから仕方ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "片手運転は安全運転義務違反の可能性",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ストローなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "信号待ちなら飲んでよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "走行中に片手で物を持つと、ハンドル操作やブレーキ操作が不安定になり安全運転義務違反になる可能性があります。飲み物は停車してから。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s063",
+    "title": "犬のリードを持ちながら",
+    "scene_type": "residential",
+    "description": "犬のリードを持ちながら自転車を運転しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "リードが短ければ問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "犬を連れての自転車運転は安全運転義務違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道なら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "小型犬なら問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "犬のリードを持ちながらの自転車運転は片手運転になるうえ、犬の急な動きでバランスを崩す危険があり、安全運転義務違反です。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s064",
+    "title": "緊急車両への対応",
+    "scene_type": "road",
+    "description": "走行中、後方から救急車のサイレンが聞こえてきました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は関係ないので走行を続ける",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "道路の左側端に寄って一時停止し、緊急車両を先に通す",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "速度を上げて先に行く",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩道に上がればよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "緊急車両が接近した場合、自転車も道路の左側に寄って一時停止し、進路を譲らなければなりません。交差点付近では交差点を避けて停止します。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s065",
+    "title": "反則金最高額の違反",
+    "scene_type": "road",
+    "description": "次のうち、自転車の反則金が最も高額なのはどれですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "信号無視（6,000円）",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "ながらスマホ（12,000円）",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "一時停止無視（5,000円）",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "無灯火（5,000円）",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車の反則金で最も高額なのは「ながらスマホ」の12,000円です。スマホ使用の危険性がいかに重大視されているかがわかります。",
+    "linked_violation_ids": [
+      "v005",
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s066",
+    "title": "左折レーンがある交差点",
+    "scene_type": "intersection",
+    "description": "左折専用レーンがある交差点を自転車で直進したいのですが、どうすべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "左折レーンから直進する",
+        "is_correct": true
+      },
+      {
+        "id": "c2",
+        "text": "直進レーンに入って直進する",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "歩道に上がって直進する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "左折レーンでは左折するしかない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c1",
+    "explanation": "自転車は車道の左端を走行するため、左折専用レーンがあっても左端をそのまま直進できます。ただし左折する車に十分注意が必要です。",
+    "linked_violation_ids": [
+      "v008",
+      "v007"
+    ],
+    "difficulty": 3,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s067",
+    "title": "トンネル内の走行",
+    "scene_type": "road",
+    "description": "昼間ですがトンネルに入ろうとしています。ライトは必要ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "昼間なのでライト不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "トンネル内は暗いのでライト点灯が必要",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "短いトンネルなら不要",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "車のライトで十分見える",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "トンネル内は昼間でも暗いため、前照灯の点灯が必要です。日没前でも、暗い場所では灯火義務が発生します。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s068",
+    "title": "歩道橋と自転車",
+    "scene_type": "sidewalk",
+    "description": "歩道橋の階段に「自転車は降りて押してください」の表示があります。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "乗ったまま走行しても問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車を降りて押して通行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "エレベーターがあれば乗ったまま利用できる",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "この表示に法的拘束力はない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "歩道橋は歩行者のための施設です。自転車は降りて押して通行するのがルール。乗ったまま走行すると歩行者にとって危険です。",
+    "linked_violation_ids": [
+      "v006"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s069",
+    "title": "道路の白線をまたぐ",
+    "scene_type": "road",
+    "description": "車道と路肩の境界線（白い実線）をまたいで走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "白線上を走るのが正しい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "車道の左側端（白線のやや内側）を走行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "白線の外側（路肩）のみ走行する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "どこでも構わない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車は車道の左側端を通行します。路肩は原則として走行場所ではなく、白線のやや内側（車道側）が正しい走行位置です。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s070",
+    "title": "信号のない横断歩道",
+    "scene_type": "intersection",
+    "description": "信号のない横断歩道の手前を自転車で通過しようとしています。横断歩道に歩行者が立っています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "歩行者が渡り始めていないので通過できる",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "横断歩道の手前で停止し、歩行者を先に渡らせる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩行者の後ろを通過すればよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車は歩行者優先義務がない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "横断歩道を渡ろうとしている歩行者がいる場合、自転車も停止して歩行者を先に渡らせなければなりません。",
+    "linked_violation_ids": [
+      "v007"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s071",
+    "title": "駐車車両のドア",
+    "scene_type": "road",
+    "description": "路上に駐車している車の横を通過しようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車のすぐ横を通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "ドアが急に開く可能性を考え、1m以上の間隔を空けて通過する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "クラクションを鳴らして通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "車に人がいなければ近くを通ってよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "駐車車両のドアが突然開く「ドアリング」は自転車事故の主な原因の一つ。十分な間隔を空けて通過しましょう。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s072",
+    "title": "複合違反：スマホ+イヤホン",
+    "scene_type": "road",
+    "description": "両耳にイヤホンをしてスマートフォンを見ながら自転車を走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "軽い違反が2つあるだけ",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "複数の違反が重なり非常に危険。視覚も聴覚も奪われた状態",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車だから問題にならない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "音楽を聴いているだけなら問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "ながらスマホ（12,000円）とイヤホン走行（5,000円）の複合違反。視覚と聴覚の両方が制限され、周囲の状況変化にまったく対応できない極めて危険な状態です。",
+    "linked_violation_ids": [
+      "v005",
+      "v018"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s073",
+    "title": "子どもを乗せた自転車",
+    "scene_type": "residential",
+    "description": "幼児用座席に子どもを乗せた自転車で歩道を走行しています。ここは自転車通行可の歩道です。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "子どもがいても通常速度で走行してよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩行者優先で徐行。子どもの安全にも気を配る",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "子どもがいるので歩道走行は禁止",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "子どもがいれば車道を走る義務はない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "幼児同乗時でも歩道通行のルールは同じ。歩行者優先で徐行義務があります。転倒リスクも高いため、より慎重な運転が必要です。",
+    "linked_violation_ids": [
+      "v006",
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s074",
+    "title": "自転車保険",
+    "scene_type": "road",
+    "description": "自転車保険について正しいのはどれですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車保険は任意なので入る必要はない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "多くの自治体で加入義務化が進んでいる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "青切符制度で保険の代わりになる",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自動車保険に含まれるので別途不要",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "多くの都道府県で自転車保険の加入が義務化されています。自転車事故でも高額な損害賠償（1億円近い判例も）が発生する可能性があり、保険加入は重要です。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s075",
+    "title": "夜間の反射材",
+    "scene_type": "night",
+    "description": "夜間、暗い服を着て自転車に乗っています。ライトは点けていますが反射材はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ライトがあれば反射材は不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "反射材や明るい服装で視認性を高めるとより安全",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "反射材は義務ではない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "前照灯があれば後方の反射材も不要",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "後方の反射器材は義務ですが、服装や自転車への追加反射材でさらに視認性を高めることが推奨されます。暗い服は車からほとんど見えません。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s076",
+    "title": "信号が青になった直後",
+    "scene_type": "intersection",
+    "description": "交差点で信号が青に変わりました。すぐに発進しても安全ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "青になったらすぐ発進する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "赤信号で進入してくる車がないか確認してから発進する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "車が先に発進するのを待つ義務がある",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "先頭にいれば最初に発進すべき",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "信号が青に変わっても、赤信号を無視して突入してくる車がいる可能性があります。左右を確認してから安全に発進しましょう。",
+    "linked_violation_ids": [
+      "v001",
+      "v007"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s077",
+    "title": "自転車通行可の歩道が終わる",
+    "scene_type": "sidewalk",
+    "description": "自転車通行可の歩道を走っていたら、突然標識がなくなり通常の歩道になりました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "そのまま歩道を走り続ける",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "車道に戻り、左側端を走行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道の端を走れば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "次の標識が出るまで歩道を走れる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車通行可の標識がなくなった歩道は原則として自転車通行不可です。安全を確認して車道に戻りましょう。",
+    "linked_violation_ids": [
+      "v006"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s078",
+    "title": "車道が工事中",
+    "scene_type": "road",
+    "description": "車道が工事で通行止めになっています。歩道を通るしかありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "工事中なのでどこを走ってもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "やむを得ない場合として歩道を徐行。歩行者優先",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "工事の車線を走る",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "引き返すしかない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "車道が通行できない場合は「やむを得ない」として歩道を通行できます。ただし歩行者優先で車道寄りを徐行しなければなりません。",
+    "linked_violation_ids": [
+      "v006",
+      "v020"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s079",
+    "title": "タイヤの空気圧",
+    "scene_type": "road",
+    "description": "タイヤの空気が少なく、ふにゃふにゃの状態で自転車を走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "走れるなら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "タイヤの空気不足はパンクやスリップの原因。整備してから乗る",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "速度を落とせば大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "空気圧は性能に影響しない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "タイヤの空気圧不足はハンドリング悪化、ブレーキ距離の増大、パンクリスク増加につながります。整備不良として安全上の問題があります。",
+    "linked_violation_ids": [
+      "v013"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s080",
+    "title": "横断歩道を自転車で渡る",
+    "scene_type": "intersection",
+    "description": "交差点の横断歩道を自転車に乗ったまま渡ろうとしています。「自転車横断帯」の表示はありません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "横断歩道は自転車で渡れない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "乗ったまま渡れるが、歩行者の妨げにならないよう注意",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "必ず降りて押して渡る",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "横断歩道は自転車優先",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "横断歩道を自転車で渡ること自体は禁止されていませんが、歩行者優先です。歩行者が多い場合は降りて押すのがマナーです。自転車横断帯がある場合はそちらを使用します。",
+    "linked_violation_ids": [
+      "v006",
+      "v007"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s081",
+    "title": "制度の施行日",
+    "scene_type": "road",
+    "description": "自転車の青切符制度はいつから施行されましたか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "2024年1月",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "2025年4月",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "2023年10月",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "2026年4月",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車の交通反則通告制度（青切符）は2025年4月1日に施行されました。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s082",
+    "title": "赤信号で停止中のスマホ",
+    "scene_type": "intersection",
+    "description": "赤信号で完全に停止しています。この間にスマートフォンで通知を確認しました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "停車中は問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "信号が変わった際に発進が遅れる危険があり推奨されない",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "赤信号中は自由にスマホを使える",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "片手でも両手でも問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "完全停車中のスマホ操作の法的扱いは議論がありますが、信号変化の見逃しや発進遅れの危険があり安全上推奨されません。安全な場所に移動してから使用しましょう。",
+    "linked_violation_ids": [
+      "v005"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s083",
+    "title": "対象年齢の境界",
+    "scene_type": "road",
+    "description": "15歳の高校生が信号無視をしました。青切符の対象になりますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "高校生なので対象",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "15歳は青切符の対象外。少年法の枠組みで対応",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "保護者に反則金が請求される",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "16歳の誕生日以降に請求される",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "青切符の対象は16歳以上です。15歳の高校生は対象外で、少年法の枠組みで対応されます。学年ではなく年齢で判断されます。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s084",
+    "title": "自転車レーンの逆走",
+    "scene_type": "road",
+    "description": "自転車専用通行帯を逆方向に走行している自転車を見かけました。これは？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車レーンは双方向",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "逆走は通行区分違反",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車同士なら問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "短距離なら許される",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車専用通行帯でも左側通行が原則。逆走は通行区分違反であり正面衝突の危険があります。",
+    "linked_violation_ids": [
+      "v003",
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s085",
+    "title": "歩行者との接触事故",
+    "scene_type": "sidewalk",
+    "description": "歩道を自転車で走行中、歩行者と接触してしまいました。怪我はなさそうです。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "怪我がなければそのまま去ってよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "停車して相手の状況を確認し、必要に応じて警察に報告する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "謝れば問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "連絡先を交換して後日対応する",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車も車両なので、事故時は停車して被害者の救護と警察への報告義務があります。怪我がなくても確認し、必要なら通報しましょう。逃げるとひき逃げになる可能性。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s086",
+    "title": "ヘルメットの着用",
+    "scene_type": "road",
+    "description": "自転車のヘルメットについて正しいのは？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "法律で着用が義務化されている",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "努力義務であり、着用が強く推奨されている",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "13歳未満のみ義務",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ヘルメットに関する規定はない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車のヘルメット着用は2023年4月から全年齢で努力義務となりました。罰則はありませんが、頭部保護のため着用が強く推奨されています。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s087",
+    "title": "追越しの方法",
+    "scene_type": "road",
+    "description": "前方を走る自転車を追い越したいのですが、どうすべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "左側から追い越す",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "右側から安全を確認して追い越す",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "ベルを鳴らして相手にどいてもらう",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩道に上がって追い越す",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "追越しは右側から行うのが原則。左側からの追越しは禁止されています。後方と対向車の安全を確認してから追い越しましょう。",
+    "linked_violation_ids": [
+      "v008",
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s088",
+    "title": "踏切内で立ち往生",
+    "scene_type": "railroad",
+    "description": "踏切内で自転車のチェーンが外れてしまい、動けなくなりました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "チェーンを直してから移動する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車を捨ててすぐに踏切から離れ、非常ボタンを押す",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "遮断機が下りるまで待つ",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "大声で助けを呼ぶ",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "踏切内で立ち往生した場合、まず自分の安全を確保して踏切から離れ、非常ボタンを押して列車に知らせることが最優先です。自転車は後から回収できます。",
+    "linked_violation_ids": [
+      "v012"
+    ],
+    "difficulty": 2,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s089",
+    "title": "自転車の運転中の通話",
+    "scene_type": "road",
+    "description": "走行中に着信がありました。スマホを手に持って通話しながら走り続けました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ハンズフリーでないので違反",
+        "is_correct": true
+      },
+      {
+        "id": "c2",
+        "text": "通話なら画面を見ていないので問題ない",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "片手がハンドルにあれば大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "30秒以内なら問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c1",
+    "explanation": "スマホを手に持っての通話は、画面注視の有無に関わらず違反です。片手運転となりハンドル・ブレーキ操作に支障が出ます。反則金12,000円。",
+    "linked_violation_ids": [
+      "v005"
+    ],
+    "difficulty": 1,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s090",
+    "title": "夜間の服装",
+    "scene_type": "night",
+    "description": "夜間に全身黒い服で自転車に乗っています。ライトは点灯しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ライトがあるので服装は関係ない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "法的義務はないが、明るい服や反射材で視認性を上げるべき",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "黒い服は違反",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "前照灯が明るければ問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "服装の色自体は法的義務ではありませんが、暗い服は車から非常に見えにくい。反射材や明るい色の服装で自分の視認性を高めることが安全につながります。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s091",
+    "title": "環状交差点（ロータリー）",
+    "scene_type": "intersection",
+    "description": "ロータリー（環状交差点）を自転車で通過する場合、どうすべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "右回りで通行する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "左回り（時計回り）で徐行して通行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "最短距離を通る",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車はロータリーに入れない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "環状交差点では左回り（時計回り）で通行します。ロータリー内の車両が優先。進入時は徐行し、環道内の交通に注意します。",
+    "linked_violation_ids": [
+      "v007",
+      "v008"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s092",
+    "title": "警察官の手信号",
+    "scene_type": "intersection",
+    "description": "信号機が故障し、警察官が手信号で交通整理をしています。自転車はどうすべきですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "信号機が壊れているので自己判断で通過する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "警察官の手信号に従う",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車には警察官の手信号は適用されない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "信号が壊れているなら交差点を避ける",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "警察官の手信号は信号機に優先します。自転車も車両として警察官の指示に従わなければなりません。",
+    "linked_violation_ids": [
+      "v001"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s093",
+    "title": "矢印信号",
+    "scene_type": "intersection",
+    "description": "交差点で本信号は赤ですが、右折の青矢印が出ています。自転車は右折できますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "矢印に従って右折できる",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車は二段階右折なので、矢印で直接右折はできない",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "矢印の方向ならどの車両も進行可能",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車には矢印信号は関係ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車は二段階右折が原則なので、右折の矢印信号で直接右折することはできません。二段階右折の手順に従います。",
+    "linked_violation_ids": [
+      "v001",
+      "v021"
+    ],
+    "difficulty": 4,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s094",
+    "title": "自転車から降りると歩行者",
+    "scene_type": "sidewalk",
+    "description": "自転車を降りて手で押して歩いています。この場合の交通ルール上の扱いは？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車に乗っているのと同じ扱い",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "歩行者として扱われる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "どちらでもない特別な扱い",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "左側通行の義務がある",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車から降りて押して歩いている場合は歩行者として扱われます。歩道を通行でき、歩行者としてのルールが適用されます。",
+    "linked_violation_ids": [
+      "v020"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s095",
+    "title": "交差点での右折待ち",
+    "scene_type": "intersection",
+    "description": "二段階右折のため、交差点の角で方向転換して次の青信号を待っています。車の通行の邪魔になっています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車に迷惑をかけないよう小回り右折する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "二段階右折は正しい方法。邪魔にならない位置で待つ",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "車が途切れたら信号を無視して右折する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩道に上がって待つ",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "二段階右折は法律で定められた方法です。車の邪魔になるように感じても、交差点の角で安全な位置に停車して次の青信号を待ちましょう。",
+    "linked_violation_ids": [
+      "v021"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s096",
+    "title": "標識「自転車通行可」の意味",
+    "scene_type": "sidewalk",
+    "description": "歩道に青い丸の中に自転車マークがある標識があります。この意味は？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車専用道路",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "この歩道は自転車も通行できる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車は歩道を走る義務がある",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車駐輪可能",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "「自転車通行可」の標識は歩道を自転車も通行できることを示します。ただし歩行者優先で徐行義務があります。車道の通行も可能です。",
+    "linked_violation_ids": [
+      "v006",
+      "v020"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s097",
+    "title": "赤切符の反則金",
+    "scene_type": "road",
+    "description": "酒酔い運転で赤切符を受けた場合、反則金を払えば終わりですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "反則金を払えば前科はつかない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "赤切符は刑事手続き。反則金ではなく罰金であり前科がつく可能性",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "赤切符でも反則金制度が適用される",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "赤切符は警告のみで処罰なし",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "赤切符は反則金制度の対象外で、刑事手続き（裁判）となります。有罪となれば罰金刑等が科され前科がつきます。青切符と赤切符の違いを正しく理解しましょう。",
+    "linked_violation_ids": [
+      "v019",
+      "v022"
+    ],
+    "difficulty": 3,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s098",
+    "title": "夜間の無灯火で事故",
+    "scene_type": "night",
+    "description": "夜間、無灯火の自転車と車が衝突しました。過失割合はどうなりますか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車が100%悪い",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "無灯火の自転車にも過失が認められ、過失割合に影響する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車が100%悪い",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "無灯火は過失割合に関係ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "無灯火は重大な違反であり、事故の過失割合に大きく影響します。車側にも注意義務がありますが、無灯火の自転車の過失は通常より重くなります。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 3,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s099",
+    "title": "複数の標識がある場合",
+    "scene_type": "intersection",
+    "description": "交差点に「一時停止」と「自転車通行可」の2つの標識があります。自転車はどうすべき？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車通行可なので一時停止は不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "両方の標識に従う。一時停止もする",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "歩道に上がれば一時停止不要",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "自転車にはどちらの標識も適用されない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "複数の標識がある場合はそれぞれに従います。「自転車通行可」は歩道の通行許可であり、「一時停止」の義務は別に適用されます。",
+    "linked_violation_ids": [
+      "v002",
+      "v020"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s100",
+    "title": "自転車の定義",
+    "scene_type": "road",
+    "description": "電動アシスト自転車は青切符制度の対象ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "電動なので原付と同じ扱い",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "電動アシスト自転車は自転車として青切符の対象",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "電動アシスト自転車は対象外",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "アシスト比率による",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "電動アシスト自転車は法律上「自転車」に分類され、青切符制度の対象です。ただし基準を超えるアシスト力のものは原動機付自転車となり別の制度が適用されます。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s101",
+    "title": "通学路の時間帯規制",
+    "scene_type": "school_zone",
+    "description": "「7:30-8:30 車両通行止め（自転車を除く）」の標識がある道路を8時に自転車で通行しました。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "車両通行止めなので自転車も不可",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "「自転車を除く」とあるので通行可能",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "時間外なので関係ない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "通学路は常に自転車通行禁止",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "「自転車を除く」の補助標識がある場合、自転車は規制対象外です。ただし通学時間帯は児童に十分注意して走行しましょう。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 3,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s102",
+    "title": "自転車の並走が許される場合",
+    "scene_type": "road",
+    "description": "「並進可」の標識がある道路で2台で並走しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "標識があっても並走は常に禁止",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "「並進可」の標識がある場所では2台までの並走が可能",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "3台以上でも並走可能",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "この標識は存在しない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "「並進可」の標識がある区間では2台までの並進が認められています。ただし他の交通の妨げにならないよう注意が必要です。",
+    "linked_violation_ids": [
+      "v011"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s103",
+    "title": "深夜のライト故障",
+    "scene_type": "night",
+    "description": "帰宅途中、自転車のライトが突然壊れました。家までもう少しです。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "もう少しなのでそのまま帰る",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "スマホのライトを代用してもよいが、できれば降りて押して帰る",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "反射材があれば無灯火でもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "明るい道路なら大丈夫",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "ライト故障時は無灯火走行は避けるべき。スマホのライトは緊急手段として使えますが、十分な光度が確保できない場合は降りて押して歩くのが安全です。",
+    "linked_violation_ids": [
+      "v004"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s104",
+    "title": "自転車道がある場合",
+    "scene_type": "road",
+    "description": "道路に「自転車道」が設けられています。自転車道を通らず車道を走ってもよいですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "どちらを走ってもよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車道がある場合は原則としてそこを通行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "自転車道は任意",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "車道の方が速く走れるので車道がよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車道が設けられている道路では原則として自転車道を通行します。自転車道は自転車専用の通行空間として整備されたものです。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s105",
+    "title": "高速道路への進入",
+    "scene_type": "road",
+    "description": "間違えて自動車専用道路の入口に来てしまいました。自転車で入ってもよいですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "左端を走れば大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車は自動車専用道路を通行できない",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "緊急時なら通行可能",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "歩道があれば通行可能",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自動車専用道路（高速道路等）は自転車の通行が禁止されています。進入しないよう標識をよく確認しましょう。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 1,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s106",
+    "title": "荷物が落ちそうな自転車",
+    "scene_type": "road",
+    "description": "前カゴに入りきらない荷物がはみ出して、落ちそうになりながら走行しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ゆっくり走れば落ちない",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "積載方法が不安定で危険。停車して荷物を整理する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "片手で押さえれば大丈夫",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "カゴに入っていれば問題ない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "荷物が落下すると他の交通の障害になり事故の原因になります。積載は安定した状態で行い、カゴに収まらない場合は別の方法を考えましょう。",
+    "linked_violation_ids": [
+      "v016"
+    ],
+    "difficulty": 1,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s107",
+    "title": "夜間の交差点",
+    "scene_type": "night",
+    "description": "夜間、信号のない暗い交差点に差し掛かりました。前照灯は点灯しています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "ライトがあるのでそのまま通過",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "徐行し、いつでも止まれる速度で安全確認して通過",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "速く通過した方が安全",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ライトを点滅させて存在を知らせる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "夜間の暗い交差点は視認性が低く特に危険。ライトがあっても十分に徐行し、安全を確認してから通過しましょう。",
+    "linked_violation_ids": [
+      "v004",
+      "v007"
+    ],
+    "difficulty": 2,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s108",
+    "title": "信号待ちでのすり抜け",
+    "scene_type": "intersection",
+    "description": "信号待ちの車の列の左側をすり抜けて前に出ようとしています。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "自転車は車の左側をすり抜けてよい",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "左側のすり抜けは車のドアや左折に注意が必要。無理なすり抜けは危険",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "右側からすり抜ける方が安全",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "すり抜けは常に違法",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "法律上、自転車は車道の左端を通行するので左側通行自体は可能ですが、停車中の車のドアが開いたり、左折車に巻き込まれる危険があります。無理なすり抜けは避けましょう。",
+    "linked_violation_ids": [
+      "v009",
+      "v007"
+    ],
+    "difficulty": 3,
+    "risk_level": "high",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s109",
+    "title": "子どものヘルメット",
+    "scene_type": "residential",
+    "description": "6歳の子どもが自転車に乗っていますが、ヘルメットをかぶっていません。",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "子どもは転んでも平気なので不要",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "保護者は子どもにヘルメットをかぶらせる努力義務がある",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "法的義務があり罰則もある",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "13歳未満は義務ではない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "13歳未満の子どもの保護者には、子どもにヘルメットをかぶらせる努力義務があります。罰則はありませんが、子どもの頭部を守るため必ずかぶらせましょう。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s110",
+    "title": "自転車横断帯",
+    "scene_type": "intersection",
+    "description": "交差点に「自転車横断帯」の表示があります。自転車はどこを渡るべき？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "横断歩道を渡る",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "自転車横断帯を通行する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "車道をそのまま直進する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "どこを渡ってもよい",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車横断帯がある場合は、そこを通行しなければなりません。横断歩道ではなく自転車横断帯を利用します。",
+    "linked_violation_ids": [
+      "v008"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s111",
+    "title": "制度対象の違反数",
+    "scene_type": "road",
+    "description": "青切符制度の対象となる違反行為はおよそ何種類ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "約20種類",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "約50種類",
+        "is_correct": false
+      },
+      {
+        "id": "c3",
+        "text": "約113種類",
+        "is_correct": true
+      },
+      {
+        "id": "c4",
+        "text": "約200種類",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c3",
+    "explanation": "青切符制度の対象は約113の違反行為です。従来の赤切符対象の重大違反を除いた、比較的軽微な違反が対象です。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 2,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s112",
+    "title": "自転車保険の義務化状況",
+    "scene_type": "road",
+    "description": "自転車保険の加入義務について正しいのは？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "全国一律で義務化されている",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "都道府県ごとに義務化・努力義務・規定なしが異なる",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "義務化された地域はまだない",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "青切符制度と同時に全国で義務化された",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "自転車保険の加入義務は都道府県ごとに異なります。多くの自治体で義務化が進んでいますが、まだ努力義務や規定がない地域もあります。お住まいの地域の条例を確認しましょう。",
+    "linked_violation_ids": [
+      "v022"
+    ],
+    "difficulty": 3,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s113",
+    "title": "違反の重複適用",
+    "scene_type": "road",
+    "description": "夜間、無灯火でスマートフォンを操作しながら右側通行をしています。何種類の違反？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "1種類（最も重い違反のみ）",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "3種類（無灯火・ながらスマホ・右側通行）",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "2種類",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "違反は1つずつしか適用されない",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "無灯火（5,000円）、ながらスマホ（12,000円）、右側通行（6,000円）の3つの違反が同時に成立する可能性があります。複数の違反が重複適用されることがあります。",
+    "linked_violation_ids": [
+      "v003",
+      "v004",
+      "v005"
+    ],
+    "difficulty": 3,
+    "risk_level": "critical",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s114",
+    "title": "歩道と車道の段差",
+    "scene_type": "road",
+    "description": "歩道から車道に降りる際、段差があります。注意すべきことは？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "勢いよく降りた方が安定する",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "速度を十分に落とし、段差に対してできるだけ直角に進入する",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "段差は無視して走行する",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "ジャンプして降りる",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "歩道と車道の段差は転倒の原因になります。速度を落とし、段差に対して直角に近い角度で進入するとタイヤが引っかかりにくくなります。",
+    "linked_violation_ids": [
+      "v009"
+    ],
+    "difficulty": 2,
+    "risk_level": "medium",
+    "updated_at": "2025-05-01"
+  },
+  {
+    "id": "s115",
+    "title": "総合：安全な自転車走行",
+    "scene_type": "road",
+    "description": "安全に自転車を運転するために最も重要なことは何ですか？",
+    "choices": [
+      {
+        "id": "c1",
+        "text": "反則金を避けること",
+        "is_correct": false
+      },
+      {
+        "id": "c2",
+        "text": "ルールを守り、自分と他者の安全を考えて走行すること",
+        "is_correct": true
+      },
+      {
+        "id": "c3",
+        "text": "できるだけ速く目的地に着くこと",
+        "is_correct": false
+      },
+      {
+        "id": "c4",
+        "text": "違反を見つかりにくくすること",
+        "is_correct": false
+      }
+    ],
+    "correct_choice_id": "c2",
+    "explanation": "交通ルールの目的は反則金を避けることではなく、すべての道路利用者の安全を守ることです。「なぜそのルールがあるのか」を理解し、安全を最優先に走行しましょう。",
+    "linked_violation_ids": [
+      "v009",
+      "v022"
+    ],
+    "difficulty": 1,
+    "risk_level": "low",
+    "updated_at": "2025-05-01"
+  }
+]
